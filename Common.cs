@@ -11,4 +11,15 @@ public static class Common
 
         return lines.ToArray();
     }
+
+    public static IEnumerable<T> Splice<T>(this IEnumerable<T> source, int start)
+    {
+        return source.Where((_, idx) => idx < start);
+    }
+
+    public static IEnumerable<T> Splice<T>(this IEnumerable<T> source, int start, int deleteCount)
+    {
+        int end = start + deleteCount;
+        return source.Where((_, idx) => idx < start || idx >= end);
+    }
 }
