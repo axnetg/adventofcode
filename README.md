@@ -6,7 +6,17 @@ I like to use LINQ to simplify looping logic and records to make the code more c
 
 Each challenge solution is implemented in its own class, with one method for part one and another for part two of the puzzle.
 
+## About the Project
+
 This is a console application written in C#. Its sole purpose is to print the solutions to Advent of Code challenges.
+
+## Stars Earned in 2024
+
+I earned **45 stars** in Advent of Code 2024. Each star represents completing one part of a challenge (up to two stars per day).
+
+## Usage
+
+Run the application from the command line, specifying the year and day of the challenge you want to solve.
 
 ```
 Description:
@@ -22,4 +32,21 @@ Options:
   -?, -h, --help     Show help and usage information
 ```
 
-Special thanks to [Zoran Horvat's repo](https://github.com/zoran-horvat/advent-of-code-2024) for inspiration!
+To solve the challenge for December 5, 2024:
+
+```bash
+dotnet run -- -y 2024 -d 5
+```
+
+## Puzzle Inputs
+
+Puzzle input files should be placed under the top-level `Inputs/` folder.
+The input file for each challenge must follow the naming convention:
+`{year}{day:00}.in`
+
+Example input for December 5, 2024: `Inputs/202405.in`
+
+## Acknowledgments
+
+- [Advent of Code](https://adventofcode.com/) by Eric Wastl for the fun and challenging puzzles.
+- [Zoran Horvat's Advent of Code 2024 Repository](https://github.com/zoran-horvat/advent-of-code-2024), which provided inspiration for some of my solutions.
